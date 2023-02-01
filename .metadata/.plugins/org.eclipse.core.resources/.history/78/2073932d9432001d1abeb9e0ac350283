@@ -1,0 +1,15 @@
+
+public class Outer{
+	class Inner{
+		public String toString() {
+			return "Hello!";
+		}
+	}
+	Inner getInner(){
+		return new Inner();
+	}
+	public static void main(String[] args) {
+		Outer outer = new Outer();
+		System.out.println(outer.getInner());
+	}
+}

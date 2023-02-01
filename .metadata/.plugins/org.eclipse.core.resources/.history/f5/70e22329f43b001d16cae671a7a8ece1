@@ -1,0 +1,17 @@
+
+public class Test {
+	//название enum пишут в единственном числе
+	public static void main(String[] args) {
+		Animal animal = Animal.CAT;
+		Season season = Season.WINTER;
+		System.out.println(season instanceof Season); //
+		switch(season) {
+		case SUMMER:
+			System.out.println("Summer");
+			break;
+		case WINTER:
+			System.out.println("Winter");
+			break;
+		}
+	}
+}

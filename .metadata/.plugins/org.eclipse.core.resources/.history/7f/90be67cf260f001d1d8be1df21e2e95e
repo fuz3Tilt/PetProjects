@@ -1,0 +1,12 @@
+import java.util.Arrays;
+
+public class SmashWords {
+	public static void main(String[] args) {
+		String[] x = new String[]{"hello","world","suka","blyat"};
+	Arrays.stream(x);
+	System.out.println(x);
+	}
+  public static String smash(String... words) {
+    return String.join(" ", words);
+  }
+}

@@ -1,0 +1,11 @@
+import java.io.*;
+
+public class WriteObject {
+public static void main(String[] args) throws IOException {
+	Person[] people = new Person[] {new Person(1,"Galya"),new Person(2,"Nadya"),new Person(3,"Geka")};
+	FileOutputStream fos = new FileOutputStream("src//people.bin");
+	ObjectOutputStream oos = new ObjectOutputStream(fos);
+	oos.writeObject(people);
+	oos.close();
+}
+}

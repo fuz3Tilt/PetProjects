@@ -1,0 +1,10 @@
+public class SmashWords {
+	public static void main(String[] args) {
+		String[] x = new String[]{"hello","world","suka","blyat"};
+		System.out.println(smash(x[0]+x[1]));
+		
+	}
+  public static String smash(String... words) {
+    return String.join(" ", words);
+  }
+}

@@ -1,0 +1,10 @@
+public class Kata{
+  public static void main(String[] args){
+    String hello = noSpace("Hello my friend");
+    System.out.println(hello);
+  }
+  public static String noSpace(String x){
+    x = x.replace(" ","");
+    return x;
+  }
+}
